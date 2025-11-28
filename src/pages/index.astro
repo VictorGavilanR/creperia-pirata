@@ -1,5 +1,6 @@
 ---
 // src/pages/index.astro
+import Hero from '../components/hero';
 import Navbar from '../components/navbar';
 import '../styles/global.css';
 ---
@@ -14,6 +15,8 @@ import '../styles/global.css';
 	<body class="bg-slate-900 min-h-screen">
 		
 		<Navbar client:load />
+		<Hero client:load />
+
 
 		
 
