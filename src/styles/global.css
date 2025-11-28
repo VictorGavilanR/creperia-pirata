@@ -1,1 +1,115 @@
+/* 1. ¡LAS FUENTES SIEMPRE PRIMERO! (Línea 1 obligatoria) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap');
+
+/* 2. LUEGO TAILWIND */
 @import "tailwindcss";
+
+/* 3. Definimos el TEMA (Colores y Fuentes) */
+@theme {
+  /* --- PALETA PIRATA --- */
+
+  /* Color primario (mar) */
+  --color-primary: #00B3E6;
+  --color-primary-dark: #0080A3;
+
+  /* Color secundario (dorado) */
+  --color-secondary: #F5B61D;
+
+  /* Fondos base */
+  --color-base-dark: #050608;
+  --color-base-light: #FBE1AE;
+  --color-base-coral: #FF6B6B;
+
+  /* Textos */
+  --color-text-main: #1A1A1A;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #7A7A7A;
+}
+
+/* 4. Estilos globales del sitio */
+@layer base {
+  html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-base-dark);
+    color: var(--color-text-light);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+  }
+}
+
+/* 5. Animaciones Pirata */
+@layer utilities {
+  /* Efecto de balanceo para el logo */
+  @keyframes sway {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  .animate-sway {
+    animation: sway 3s ease-in-out infinite;
+  }
+
+  /* Brillo dorado */
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(245, 182, 29, 0.4) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  /* Fade in para menú móvil */
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 0.3s ease-out;
+  }
+
+  /* Textura de madera para navbar */
+  .texture-wood {
+    background-image: 
+      repeating-linear-gradient(
+        90deg,
+        rgba(139, 69, 19, 0.05) 0px,
+        rgba(139, 69, 19, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+
+  /* Borde estilo cuerda */
+  .border-rope {
+    border-style: solid;
+    border-image: repeating-linear-gradient(
+      45deg,
+      #F5B61D,
+      #F5B61D 10px,
+      #D4A017 10px,
+      #D4A017 20px
+    ) 1;
+  }
+}
