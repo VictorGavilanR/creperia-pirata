@@ -21,12 +21,7 @@ const HistoryBackground = () => {
         <div className="h-full w-2 mx-auto bg-linear-to-b from-transparent via-secondary to-transparent rounded-full rope-pattern"></div>
       </div>
 
-      {/* Decoración de olas en el footer */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 opacity-10 pointer-events-none">
-        <svg viewBox="0 0 1200 120" className="w-full h-full fill-secondary">
-          <path d="M0,50 Q150,30 300,50 T600,50 T900,50 T1200,50 L1200,120 L0,120 Z" />
-        </svg>
-      </div>
+      
     </>
   );
 };

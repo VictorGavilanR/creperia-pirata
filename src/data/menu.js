@@ -110,7 +110,7 @@ export const menuItems = [
     name: "Combo Botín del Capitán",
     desc: "Incluye una Napolitana plant based y 1 bebida a elección.",
     price: "$4.990",
-    category: "plant-based",
+    category: "cofres",
     image: "https://backend.influye.app/storage/products/b3c650c4d3baf5883a01093866fff0f8.png",
     isPopular: false
   },
@@ -247,7 +247,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 21,
+    id: 23,
     name: "Peperoni",
     desc: "Incluye salsa de tomate, queso, pepperoni, tomate y orégano.",
     price: "$4.990",
@@ -256,7 +256,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 23,
+    id: 24,
     name: "Omelette",
     desc: "Incluye 1 huevo, queso, jamón y tocino.",
     price: "$5.490",
@@ -265,7 +265,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 24,
+    id: 25,
     name: "Génova",
     desc: "Incluye queso crema, pesto, jamón, tocino y tomate.",
     price: "$4.490",
@@ -274,7 +274,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 25,
+    id: 26,
     name: "Todas las Carnes",
     desc: "Incluye queso, salsa de tomate, jamón, tocino, pepperoni y orégano.",
     price: "$5.490",
@@ -283,7 +283,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 26,
+    id: 27,
     name: "Americana",
     desc: "Incluye cheddar, tocino, jamón, lechuga, tomate, pepinillos y salsa barbecue.",
     price: "$5.990",
@@ -295,7 +295,7 @@ export const menuItems = [
   // Crepas plant-based
 
   {
-    id: 27,
+    id: 28,
     name: "Espada Dorada",
     desc: "Incluye dulce sin leche, plátano y azúcar flor.",
     price: "$4.490",
@@ -304,7 +304,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 28,
+    id: 29,
     name: "Sparrow",
     desc: "Incluye crema de avellana nusco, plátano, frutilla y azúcar flor.",
     price: "$4.990",
@@ -313,7 +313,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 29,
+    id: 30,
     name: "Oreo Classic",
     desc: "Incluye 1 base, 1 fruta, oreo y azúcar flor.",
     price: "$4.990",
@@ -322,7 +322,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 30,
+    id: 31,
     name: "Snicker",
     desc: "Incluye crema de avellana nusco, mantequilla de maní, oreo, maní, salsa de caramelo y chispas de chocolate.",
     price: "$5.690",
@@ -331,7 +331,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 31,
+    id: 32,
     name: "Cheddar-Tofu",
     desc: "Incluye cheddar plant based, tofu y salsa de barbecue.",
     price: "$4.490",
@@ -340,7 +340,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 32,
+    id: 33,
     name: "Aliada",
     desc: "Incluye queso plant based y tofu.",
     price: "$4.490",
@@ -349,7 +349,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 33,
+    id: 34,
     name: "Napolitana",
     desc: "Incluye queso plant-based, salsa de tomate, tofu, tomate y orégano.",
     price: "$4.990",
@@ -358,7 +358,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 34,
+    id: 35,
     name: "Americana",
     desc: "Incluye cheddar plant based, tofu, lechuga, tomate, pepinillo y salsa de barbecue.",
     price: "$5.990",
@@ -369,7 +369,7 @@ export const menuItems = [
 
   // Bebidas
   {
-    id: 35,
+    id: 36,
     name: "Coca-Cola(220 ml)",
     desc: "",
     price: "$1.200",
@@ -378,7 +378,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 36,
+    id: 37,
     name: "Fanta(220 ml)",
     desc: "",
     price: "$1.200",
@@ -387,7 +387,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 37,
+    id: 38,
     name: "Sprite(220 ml)",
     desc: "",
     price: "$1.200",
@@ -396,7 +396,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 38,
+    id: 39,
     name: "Coca-Cola Zero(220 ml)",
     desc: "",
     price: "$1.200",
@@ -405,7 +405,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 39,
+    id: 40,
     name: "Agua Mineral sin Gas",
     desc: "",
     price: "$1.200",
@@ -414,7 +414,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 40,
+    id: 41,
     name: "Agua Mineral Gasificada",
     desc: "",
     price: "$1.200",
@@ -423,7 +423,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 41,
+    id: 42,
     name: "Jugo Zuko Naranja",
     desc: "",
     price: "$800",
@@ -432,7 +432,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 42,
+    id: 43,
     name: "Jugo Zuko Manzana",
     desc: "",
     price: "$800",
@@ -441,7 +441,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 43,
+    id: 44,
     name: "Jugo Zuko Durazno",
     desc: "",
     price: "$800",
@@ -450,7 +450,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 44,
+    id: 45,
     name: "Jugo Zuko Piña",
     desc: "",
     price: "$800",
@@ -459,7 +459,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 45,
+    id: 46,
     name: "Jugo Zuko Naranja",
     desc: "",
     price: "$800",
@@ -468,7 +468,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 46,
+    id: 47,
     name: "Té(Bolsa)",
     desc: "",
     price: "$500",
@@ -477,7 +477,7 @@ export const menuItems = [
     isPopular: false
   },
   {
-    id: 47,
+    id: 48,
     name: "Café(Sachet)",
     desc: "",
     price: "$500",

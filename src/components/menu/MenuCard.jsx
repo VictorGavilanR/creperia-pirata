@@ -48,13 +48,16 @@ const MenuCard = ({ item }) => {
           {/* Bisagras del cofre */}
           <div className="absolute top-2 left-4 w-8 h-1 bg-secondary/60 rounded-full shadow-md z-20 border-t border-secondary/80"></div>
           <div className="absolute top-2 right-4 w-8 h-1 bg-secondary/60 rounded-full shadow-md z-20 border-t border-secondary/80"></div>
-
           <img 
             src={item.image} 
             alt={item.name} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
-          />
-          
+            className="
+                 w-full h-full
+    object-contain
+    scale-[1.25]
+    transition-transform duration-700
+    group-hover:scale-[1.32]
+            "/>
           {/* Sombra interior oscura */}
           <div className="absolute inset-0 shadow-[inset_0_0_30px_rgba(0,0,0,0.7)] pointer-events-none"></div>
           
