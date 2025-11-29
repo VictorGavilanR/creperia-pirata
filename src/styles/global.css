@@ -113,3 +113,93 @@
     ) 1;
   }
 }
+
+
+
+
+/* ========================================
+   ANIMACIONES ÉPICAS PARA EL FOOTER
+======================================== */
+
+@layer utilities {
+  /* Olas que se mecen (sin cortes) */
+  @keyframes waveBob {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  /* Partículas de espuma flotante */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.7;
+    }
+  }
+
+  .animate-float {
+    animation: float ease-in-out infinite;
+  }
+
+  /* Elementos que se balancean (conchas, estrellas, cangrejos) */
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-3deg) scale(1);
+    }
+    50% {
+      transform: rotate(3deg) scale(1.1);
+    }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 4s ease-in-out infinite;
+  }
+
+  /* Anillo giratorio lento (logo) */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+  /* Brillo que cruza lentamente */
+  @keyframes shimmer-slow {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+
+  .animate-shimmer-slow {
+    animation: shimmer-slow 3s ease-in-out infinite;
+  }
+}
+
+/* ========================================
+   BORDES Y ESTILOS PERSONALIZADOS
+======================================== */
+
+.border-3 {
+  border-width: 3px;
+}
