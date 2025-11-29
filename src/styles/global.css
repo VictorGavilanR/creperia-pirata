@@ -114,7 +114,6 @@
   }
 }
 
-<<<<<<< HEAD
 
 
 
@@ -203,7 +202,7 @@
 
 .border-3 {
   border-width: 3px;
-=======
+}
 /* src/styles/global.css */
 
 @layer utilities {
@@ -273,5 +272,4 @@
     #FFD45A,
     #F5B61D
   );
->>>>>>> 38695391a4f851dfec6d0185e6f3babc84601e70
 }
