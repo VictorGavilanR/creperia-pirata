@@ -149,3 +149,38 @@
   
   /* Shimmer ya lo tenías, pero asegúrate de que coincida con lo que necesitas */
 }
+
+
+/* =========================
+   SCROLLBAR ESTILO PIRATA
+   ========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Canal (fondo) */
+::-webkit-scrollbar-track {
+  background-color: var(--color-base-dark);
+  border-left: 1px solid rgba(245, 182, 29, 0.15);
+}
+
+/* Barra (thumb) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #F5B61D,
+    #D4A017
+  );
+  border-radius: 20px;
+  border: 3px solid var(--color-base-dark);
+}
+
+/* Hover: metal más vivo */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #FFD45A,
+    #F5B61D
+  );
+}

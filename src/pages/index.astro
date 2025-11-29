@@ -1,7 +1,10 @@
 ---
 // src/pages/index.astro
 import Hero from '../components/hero';
+import History from '../components/historia';
 import Navbar from '../components/navbar';
+import Menu from '../components/menu';
+import SocialFloat from '../components/redes_sociales'; // Apunta a la carpeta
 import '../styles/global.css';
 ---
 
@@ -16,6 +19,11 @@ import '../styles/global.css';
 		
 		<Navbar client:load />
 		<Hero client:load />
+		<History client:visible />
+		<Menu client:visible />
+		<SocialFloat client:idle />
+
+		
 
 
 		

@@ -9,20 +9,31 @@ const Hero = () => {
       className="
         relative
         w-full
-        min-h-[100svh]      /* Móvil: Mínimo toda la pantalla, pero puede crecer */
-        lg:h-[100svh]       /* Escritorio: Altura fija exacta */
-        
+        min-h-[100svh]
+        overflow-hidden
         bg-base-dark
-        overflow-hidden     /* Ocultamos lo que salga por los lados */
         
         flex
+        flex-col
         items-center
-        justify-center
         
-        /* PADDING PARA EL NAVBAR: */
-        pt-28               /* Móvil: Mucho espacio arriba */
-        pb-12               /* Móvil: Espacio abajo para scroll */
-        lg:py-0             /* Escritorio: Sin padding vertical (el flex centra) */
+        /* --- CORRECCIÓN RESPONSIVA --- */
+        
+        /* 1. MÓVIL (Por defecto): Centrado con algo de padding */
+        justify-center
+        pt-28
+        
+        /* 2. NOTEBOOK/LAPTOP (md y lg): AQUÍ ESTÁ EL TRUCO */
+
+        md:justify-start
+        md:pt-25          /
+        lg:pt-20          
+        
+        /* 3. MONITOR GIGANTE (xl): Volvemos a centrar matemáticamente */
+        xl:justify-center
+        xl:pt-0
+        
+        pb-12
       "
     >
       <HeroBackground />
