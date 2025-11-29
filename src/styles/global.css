@@ -114,6 +114,7 @@
   }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -202,4 +203,75 @@
 
 .border-3 {
   border-width: 3px;
+=======
+/* src/styles/global.css */
+
+@layer utilities {
+  /* ... tus estilos anteriores ... */
+
+  /* --- ANIMACIONES DEL HERO (Movidas desde JSX) --- */
+
+  /* Niebla moviéndose */
+  @keyframes mistMove {
+    0% { transform: translateX(-10px); }
+    100% { transform: translateX(10px); }
+  }
+
+  /* Flotar (Iconos) */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Fade In (Entrada suave) */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  /* Shimmer ya lo tenías, pero asegúrate de que coincida con lo que necesitas */
+}
+
+
+/* =========================
+   SCROLLBAR ESTILO PIRATA
+   ========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Canal (fondo) */
+::-webkit-scrollbar-track {
+  background-color: var(--color-base-dark);
+  border-left: 1px solid rgba(245, 182, 29, 0.15);
+}
+
+/* Barra (thumb) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #F5B61D,
+    #D4A017
+  );
+  border-radius: 20px;
+  border: 3px solid var(--color-base-dark);
+}
+
+/* Hover: metal más vivo */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #FFD45A,
+    #F5B61D
+  );
+>>>>>>> 38695391a4f851dfec6d0185e6f3babc84601e70
 }
